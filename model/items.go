@@ -42,7 +42,7 @@ func TransalateParamToRoman(params []string) (string, error) {
 func GetItemValueFromStatement(roman string, total float32) (float32, error) {
 	n, err := GetDecimalFromRoman(roman)
 	if err != nil {
-		return float32(0), ErrItemNotFound
+		return float32(0), err
 	}
 
 	return total/float32(n), nil

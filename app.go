@@ -26,6 +26,6 @@ func main() {
 	}
 
 	for _, a := range args {
-		m.ExecuteCommad(a)
+		fmt.Printf(m.ExecuteCommad(a))
 	}
 }
