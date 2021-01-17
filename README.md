@@ -1,7 +1,7 @@
 # Roman Numbers
 
 ### Instalation :
-* Read Go installation steps from [hire](golang.org/doc/install).
+* Read Go installation steps from [here](golang.org/doc/install).
 
 * Clone the repository using command 
 ```sh
