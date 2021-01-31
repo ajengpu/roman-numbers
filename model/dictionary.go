@@ -197,5 +197,9 @@ func (d Dictionary) PrintAnswer(input CommandInput, output CommandOutput) string
 	valStr := fmt.Sprintf("%v", output.Value)
 	answer = strings.Replace(answer, "{v}", valStr, -1)
 
+	if len(answer) > 0 {
+		answer += "\n"
+	}
+
 	return answer
 }
