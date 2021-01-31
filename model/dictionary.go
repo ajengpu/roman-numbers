@@ -199,19 +199,3 @@ func (d Dictionary) PrintAnswer(input CommandInput, output CommandOutput) string
 
 	return answer
 }
-
-// func ExecuteCommad(cmd string) string {
-// 	cmdArr := strings.Split(cmd, " ")
-// 	switch cmdArr[len(cmdArr)-1] {
-// 	case "?":
-// 		return GetValueCommad(cmdArr)
-// 	case "Credits":
-// 		return SaveItemCommand(cmdArr)
-// 	default:
-// 		if _, err := GetRomanNumber(cmdArr[len(cmdArr)-1]); err != nil {
-// 			return fmt.Sprintf("%v\n", ErrInvalidCommand)
-
-// 		}
-// 		return SaveParamCommand(cmdArr)
-// 	}
-// }
