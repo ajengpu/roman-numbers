@@ -14,6 +14,8 @@
                 "how many Credits is glob glob Gold ?",
                 "how many Credits is glob glob glob glob glob glob Gold ?",
                 "how many Credits is pish tegj glob Iron ?",
+                "Does pish tegj glob glob Iron has more Credits than glob prok Gold ?",
+                "Is glob prok larger than pish pish ?",
                 "how much wood cloud a woodchuck chuck if a woodchuck could chuck wood ?"
             ],
             "output" : [
@@ -22,6 +24,8 @@
                 "glob glob Gold is 28900 Credits",
                 "Request number is in invalid format",
                 "pish tegj glob Iron is 8015.5 Credits",
+                "pish tegj glob glob Iron has less Credits than glob prok Gold",
+                "glob prok is smaller than pish pish",
                 "I have no idea what you are talking about"
             ]
         },

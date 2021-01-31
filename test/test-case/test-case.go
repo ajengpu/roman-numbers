@@ -48,7 +48,7 @@ func (testCases TestCases) Run() {
 
 		var sysOutput []string
 		for _, input := range testCase.Input {
-			res := strings.TrimSuffix(m.ExecuteCommad(input), "\n")
+			res := strings.TrimSuffix(m.ExecuteCommand(input), "\n")
 			if res != "" {
 				sysOutput = append(sysOutput, res)
 			}
