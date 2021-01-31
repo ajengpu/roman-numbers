@@ -18,7 +18,7 @@ type Dictionary struct {
 var dictionary = map[string][]Dictionary{
 	"param": []Dictionary{
 		Dictionary{
-			Regex:          "([\\w]+) is (I|V|X|L|C|D|M)",
+			Regex:          "^([\\w]+) is (I|V|X|L|C|D|M)$",
 			VariableNumber: 0,
 			Command:        "SaveParam",
 			Answer:         "",
@@ -26,7 +26,7 @@ var dictionary = map[string][]Dictionary{
 	},
 	"item": []Dictionary{
 		Dictionary{
-			Regex:          "([\\w ]+)is ([\\d]+) Credits",
+			Regex:          "^(([a-z]+ )+)[A-Z]([a-z])+ is ([\\d]+) Credits$",
 			VariableNumber: 1,
 			Command:        "SaveItem",
 			ItemType:       "Credits",
@@ -35,27 +35,27 @@ var dictionary = map[string][]Dictionary{
 	},
 	"question": []Dictionary{
 		Dictionary{
-			Regex:          "how much is ([\\w ]+\\?)",
+			Regex:          "^how much is ([\\w ]+\\?)$",
 			VariableNumber: 1,
 			Command:        "GetValue",
 			Answer:         "{p} is {v}",
 		},
 		Dictionary{
-			Regex:          "how many Credits is ([\\w ]+\\?)",
+			Regex:          "^how many Credits is ([\\w ]+\\?)$",
 			VariableNumber: 1,
 			Command:        "GetValue",
 			ItemType:       "Credits",
 			Answer:         "{p} is {v} Credits",
 		},
 		Dictionary{
-			Regex:          "Does ([\\w ]+) has more Credits than ([\\w ]+)\\?",
+			Regex:          "^Does ([\\w ]+) has more Credits than ([\\w ]+)\\?$",
 			VariableNumber: 2,
 			Command:        "CompareValue",
 			ItemType:       "Credits",
 			Answer:         "{p} has {v} Credits than {p}",
 		},
 		Dictionary{
-			Regex:          "Is ([\\w ]+) larger than ([\\w ]+)\\?",
+			Regex:          "^Is ([\\w ]+) larger than ([\\w ]+)\\?$",
 			VariableNumber: 2,
 			Command:        "CompareValue",
 			Answer:         "{p} is {v} than {p}",
